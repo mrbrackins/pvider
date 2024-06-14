@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:prvder_example/count_provider.dart';
+import 'package:prvder_example/affirmation_provider.dart';
 import 'package:prvder_example/myhomepage.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
         providers: [
-          ChangeNotifierProvider(create:  (context) => CountProvider())
+          ChangeNotifierProvider(create:  (context) => AffirmationProvider())
         ],
       
       child: MaterialApp(
